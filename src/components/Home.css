@@ -41,5 +41,9 @@ video {
 	color: var(--main-background);
 	border-radius: 5px;
 	padding: 1rem;
-    font-weight: bold;
+	font-weight: bold;
+}
+
+.hero-container p {
+	text-align: center;
 }
