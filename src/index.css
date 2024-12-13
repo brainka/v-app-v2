@@ -1,0 +1,70 @@
+:root {
+	--main-background: #292e49;
+	--main-background-hightlight: #33395a;
+	--main-text: #fcfeff;
+	--highlight: #ee5a1e;
+	--main-highlight-rgb: 238, 90, 30;
+
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	--main-background: #232822;
+	--main-background-hightlight: #232822;
+
+	--main-text: #fefeff;
+	--highlight: #28bdc2;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	line-height: 1.5;
+	margin: 0 auto;
+
+	background-color: var(--main-background);
+	color: var(--main-text);
+}
+
+img,
+picture {
+	max-width: 100%;
+	display: block;
+	height: auto;
+	object-fit: contain;
+}
+
+input,
+button,
+textarea,
+select {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h2 {
+	color: var(--highlight);
+	/* border-bottom: 0.2rem solid var(--highlight); */
+	/* width: max-content; */
+}
+
+.background-highlight {
+	background-color: var(--main-background-hightlight);
+}
+

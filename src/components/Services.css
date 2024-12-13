@@ -1,0 +1,69 @@
+section#services {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	/* flex-wrap: wrap; */
+}
+
+.pricing-plan-container {
+	display: flex;
+	gap: 2rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.pricing-plan {
+	border-radius: 25px;
+	background-color: rgb(240, 132, 132);
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+
+	/* align-self: stretch; */
+	max-height: 620px;
+
+	background-color: #2a3130;
+	color: var(--main-text);
+
+	transition: 0.3s transform ease-in-out;
+
+	cursor: pointer;
+
+	width: 100%;
+	max-width: 400px;
+}
+
+.pricing-plan .contactButton {
+	background-color: #1f989c;
+	background-color: var(--highlight);
+	padding: 1rem;
+	border-radius: 10px;
+	border: none;
+	text-align: center;
+	transition: transform 0.3s ease-in-out;
+}
+
+.pricing-plan:hover .contactButton {
+	/* background-color: var(--highlight); */
+}
+
+.pricing-plan:hover {
+	transform: scale(1.1);
+	/* background-color: rgba(91, 106, 104, 0.5); */
+}
+
+/* .pricing-plan:hover ~ .pricing-plan {
+	transform: scale(0.9);
+}
+ */
+
+@media screen and (max-width: 48em) {
+	.pricing-plan {
+		transition: none;
+	}
+
+	.pricing-plan:hover {
+		transform: none;
+	}
+}

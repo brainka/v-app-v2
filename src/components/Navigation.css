@@ -1,0 +1,44 @@
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 1rem;
+
+	height: 6rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+
+	transition: 0.5s opacity ease;
+
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+
+	z-index: 10;
+}
+
+.nav.visible {
+	opacity: 1;
+}
+
+.active {
+	border-bottom: 3px solid var(--highlight);
+	color: var(--highlight);
+}
+
+nav ul li:hover {
+	color: var(--highlight);
+}
+
+nav ul {
+	display: flex;
+	gap: 1rem;
+}
+
+.logo {
+	cursor: pointer;
+}
