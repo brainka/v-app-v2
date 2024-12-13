@@ -58,7 +58,7 @@ function App() {
 	});
 
 	return (
-		<div>
+		<div className='app-container'>
 			<Navigation />
 
 			<Home ref={homeRef} />

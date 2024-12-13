@@ -68,3 +68,6 @@ h2 {
 	background-color: var(--main-background-hightlight);
 }
 
+.app-container > section:not(#home) {
+	padding: 1rem;
+}
