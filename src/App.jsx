@@ -29,15 +29,12 @@ function App() {
 			(entries) => {
 				entries.forEach((entry) => {
 					if (entry.isIntersecting) {
-						console.log(`im intersecting ${entry.target.id}`);
-
 						navLinks.forEach((link) => {
 							link.classList.remove('active');
 
 							if (entry.target.id === link.getAttribute('href').split('#')[1]) {
 								link.classList.add('active');
 							}
-							console.log(link);
 						});
 					}
 				});
@@ -58,7 +55,7 @@ function App() {
 	});
 
 	return (
-		<div className='app-container'>
+		<div className="app-container">
 			<Navigation />
 
 			<Home ref={homeRef} />

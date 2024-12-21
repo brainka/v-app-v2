@@ -26,7 +26,6 @@ const Testimonials = forwardRef(function Testimonials(props, ref) {
 	const [testimonialIndex, setTestimonialIndex] = useState(0);
 
 	useEffect(() => {
-		console.log(testimonialIndex);
 		const testimonialInterval = setInterval(() => {
 			if (testimonialIndex >= testimonials.length - 1) {
 				setTestimonialIndex(0);

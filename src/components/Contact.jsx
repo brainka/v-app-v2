@@ -38,7 +38,6 @@ const Contact = forwardRef(function Contact(props, ref) {
 				'https://v-app-backend.onrender.com/api/contacts',
 				formData
 			);
-			console.log(response);
 
 			if (response.status === 200) {
 				setFormData({
