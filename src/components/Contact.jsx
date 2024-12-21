@@ -59,7 +59,7 @@ const Contact = forwardRef(function Contact(props, ref) {
 			}
 		} catch (error) {
 			console.error('Error submitting form', error);
-			setFormData('Error submitting form. Please try again.');
+			setToastMessage('Error submitting form. Please try again.');
 			setToastType('error');
 		} finally {
 			setIsFormSubmitting(false);
