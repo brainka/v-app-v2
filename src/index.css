@@ -62,6 +62,8 @@ h2 {
 	color: var(--highlight);
 	/* border-bottom: 0.2rem solid var(--highlight); */
 	/* width: max-content; */
+
+	margin-top: 6rem;
 }
 
 .background-highlight {

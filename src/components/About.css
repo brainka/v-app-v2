@@ -56,6 +56,10 @@ img {
 	/* text-align: center; */
 }
 
+#about .img-container {
+	margin-top: 6rem;
+}
+
 .about-section > p {
 	line-height: 1.5;
 }
