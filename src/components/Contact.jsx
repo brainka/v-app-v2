@@ -35,7 +35,7 @@ const Contact = forwardRef(function Contact(props, ref) {
 
 		try {
 			const response = await axios.post(
-				'https://v-app-backend.onrender.com/api/contact',
+				'https://v-app-backend.onrender.com/api/contacts',
 				formData
 			);
 			console.log(response);
