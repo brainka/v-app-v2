@@ -1,11 +1,14 @@
 import './Contact.css';
-import { forwardRef, useState, useEffect } from 'react';
+import { forwardRef, useState } from 'react';
 import axios from 'axios';
+import closeIcon from '../assets/closeIcon.svg';
 
 const Toast = ({ message, onClose, type }) => (
 	<div className={`toast ${type}`}>
 		{message}
-		<button onClick={onClose}>X</button>
+		<button onClick={onClose}>
+			<img src={closeIcon} alt="" />
+		</button>
 	</div>
 );
 
@@ -35,7 +38,7 @@ const Contact = forwardRef(function Contact(props, ref) {
 
 		try {
 			const response = await axios.post(
-				'https://v-app-backend.onrender.com/api/contacts',
+				'https://v-app-backend.onrender.com/api/contact',
 				formData
 			);
 
@@ -84,7 +87,6 @@ const Contact = forwardRef(function Contact(props, ref) {
 				className="background-highlight"
 				onSubmit={handleFormSubmit}
 			>
-				{/* <h2>Reach Out</h2> */}
 				<div>
 					<label htmlFor="name">NAME</label>
 					<input
@@ -145,7 +147,6 @@ const Contact = forwardRef(function Contact(props, ref) {
 						value={formData.goals}
 					></textarea>
 				</div>
-				{/* <Link to="/contact" element={<Contact />}></Link> */}
 				<button
 					type="submit"
 					disabled={isFormSubmitting}

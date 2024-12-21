@@ -180,6 +180,10 @@ video {
 	margin-left: 10px;
 }
 
+.toast button img {
+	width: 1.5rem;
+}
+
 .toast.success {
 	background-color: green;
 }
